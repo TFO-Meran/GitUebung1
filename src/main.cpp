@@ -1,6 +1,9 @@
 // ****************************************************************************
 // ****************************************************************************
 //
+// ****************************************************************************
+// ****************************************************************************
+//
 //                        U E B U N G   G I T   1
 //
 // ****************************************************************************
@@ -8,7 +11,7 @@
 
 #include <iostream>
 #include <windows.h>
-#include <fstream>
+#include <06reifel.h>
 
 using namespace std;
 
@@ -19,15 +22,14 @@ using namespace std;
 int main(int, char **)
 {
     SetConsoleOutputCP(CP_UTF8);
-    // srand(time(NULL));
 
-    // fstream datei;
-    // string pfad = "..\\src\\daten.csv";
-    // datei.open(pfad);
+    string eingabe;
 
-    // datei.seekp(0, ios::end);     // Öffnet die Datei vom Ende her..
-    // int filesize = datei.tellg(); // gibt die absolute Position=Anzahl an Bytes zurück..
-    // datei.seekp(0, ios::beg); // Öffnet die Datei vom Ende her..
+    do
+    {
+        cout << "Bitte geben Sie ihren Benutzernamen ein\n>>>";
+        cin >> eingabe;
+    } while (!get_06reifel(eingabe));
 }
 
 //=============================================================================
