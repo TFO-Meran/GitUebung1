@@ -9,6 +9,7 @@
 #include <iostream>
 #include <windows.h>
 #include <fstream>
+#include <06salfel.h>
 
 using namespace std;
 
@@ -19,15 +20,16 @@ using namespace std;
 int main(int, char **)
 {
     SetConsoleOutputCP(CP_UTF8);
-    // srand(time(NULL));
+    
+    bool isUser = false; 
 
-    // fstream datei;
-    // string pfad = "..\\src\\daten.csv";
-    // datei.open(pfad);
-
-    // datei.seekp(0, ios::end);     // Öffnet die Datei vom Ende her..
-    // int filesize = datei.tellg(); // gibt die absolute Position=Anzahl an Bytes zurück..
-    // datei.seekp(0, ios::beg); // Öffnet die Datei vom Ende her..
+    do {
+        string login; 
+        cout << "Gib deinen Login ein" << endl; 
+        cin >> login; 
+        isUser = get_06salfel(login);
+    }
+    while (isUser);
 }
 
 //=============================================================================
