@@ -9,18 +9,37 @@
 #include <iostream>
 #include <windows.h>
 #include <fstream>
-
+#include <06walmic.h>
 using namespace std;
 
 //=============================================================================
 //                           MAIN
 //=============================================================================
 
-int main(int, char **)
+bool get_06walmic(string login);
+void data();
+
+int main()
 {
-    SetConsoleOutputCP(CP_UTF8);
-    
-    
+
+    bool b = true;
+    string login;
+
+    while (b)
+    {
+        cout << "Gib dein login ein:";
+        cin >> login;
+        b = get_06walmic(login);
+        if (b == 1)
+        {
+            cout << "false\n";
+        }
+        else
+        {
+            cout << "true\n";
+            data();
+        }
+    }
 }
 
 //=============================================================================
