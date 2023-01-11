@@ -9,7 +9,6 @@
 #include <iostream>
 #include <windows.h>
 #include <fstream>
-#include <06salfel.h>
 
 using namespace std;
 
@@ -21,15 +20,7 @@ int main(int, char **)
 {
     SetConsoleOutputCP(CP_UTF8);
     
-    bool isUser = false; 
-
-    do {
-        string login; 
-        cout << "Gib deinen Login ein" << endl; 
-        cin >> login; 
-        isUser = get_06salfel(login);
-    }
-    while (isUser);
+    
 }
 
 //=============================================================================
