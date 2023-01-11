@@ -15,3 +15,4 @@ Vorname, Nachnam, Alter, Wohnort ausgibt und true zurückgibt. wenn der String n
 7. Überprüfe, ob dein Programm compilierbar ist und funktioniert. Falls ja, führe nun einen Push aus. Überprüfe online, ob dein branch zu übertragen wurde.
 >Achtung: Für den push wird sich ein kleines Fenster für die Authentifizierung an Github öffnen. Hier musst du dich korrekt anmelden, sonst funktioniert der push nicht.
 
+-----
