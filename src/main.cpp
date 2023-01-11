@@ -1,35 +1,20 @@
-// ****************************************************************************
-// ****************************************************************************
-//
-//                        U E B U N G   G I T   1
-//
-// ****************************************************************************
-// ****************************************************************************
-
 #include <iostream>
 #include <windows.h>
-#include <fstream>
-
+#include "06gamdom.h"
 using namespace std;
 
-//=============================================================================
-//                           MAIN
-//=============================================================================
-
-int main(int, char **)
+int main()
 {
     SetConsoleOutputCP(CP_UTF8);
-    // srand(time(NULL));
 
-    // fstream datei;
-    // string pfad = "..\\src\\daten.csv";
-    // datei.open(pfad);
+    bool user = false;
 
-    // datei.seekp(0, ios::end);     // Öffnet die Datei vom Ende her..
-    // int filesize = datei.tellg(); // gibt die absolute Position=Anzahl an Bytes zurück..
-    // datei.seekp(0, ios::beg); // Öffnet die Datei vom Ende her..
+    do
+    {
+        string login; 
+        cout << "Gib deinen Login ein: ";
+        cin >> login;
+        user = get_06gamdom(login); 
+    } while (!user);
+    
 }
-
-//=============================================================================
-//                           END OF FILE
-//=============================================================================
