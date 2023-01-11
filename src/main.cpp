@@ -9,6 +9,7 @@
 #include <iostream>
 #include <windows.h>
 #include <fstream>
+#include "06stefel.h"
 
 using namespace std;
 
@@ -18,16 +19,16 @@ using namespace std;
 
 int main(int, char **)
 {
+    string login;
+    do
+    { 
     SetConsoleOutputCP(CP_UTF8);
-    // srand(time(NULL));
-
-    // fstream datei;
-    // string pfad = "..\\src\\daten.csv";
-    // datei.open(pfad);
-
-    // datei.seekp(0, ios::end);     // Öffnet die Datei vom Ende her..
-    // int filesize = datei.tellg(); // gibt die absolute Position=Anzahl an Bytes zurück..
-    // datei.seekp(0, ios::beg); // Öffnet die Datei vom Ende her..
+    
+    cout << "Geben sie ihren Login ein: ";
+    cin >> login;
+    
+    } while (get_06stefel(login) == false);
+   
 }
 
 //=============================================================================
