@@ -16,11 +16,20 @@ using namespace std;
 //                           MAIN
 //=============================================================================
 
-int main(int, char **)
-{
-    SetConsoleOutputCP(CP_UTF8);
-    
-    
+void ben(){
+    cout << "Name = Lorenz Alber" << endl;
+    cout << "Alter = 16 Jahre" << endl;
+    cout << "Wohnort = Mars";
+}
+
+int main(){
+    string benutzer;
+    cout << "Gib einen Benutzernamen ein!"<< endl;
+    cin >> benutzer;
+    if (benutzer == "lollo")
+    {
+        ben();
+    }   
 }
 
 //=============================================================================
