@@ -9,6 +9,7 @@
 #include <iostream>
 #include <windows.h>
 #include <fstream>
+#include <06bersim.h>
 
 using namespace std;
 
@@ -20,7 +21,16 @@ int main(int, char **)
 {
     SetConsoleOutputCP(CP_UTF8);
     
-    
+    string ben;
+    bool test;
+    do
+    {  
+        cout << "Gib deinen Benutzer ein ";
+        cin >> ben;
+        test = get_06bersim(ben);
+        
+    } while (test==true);
+
 }
 
 //=============================================================================
