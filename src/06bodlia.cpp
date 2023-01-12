@@ -9,7 +9,7 @@
 #include <iostream>
 #include <windows.h>
 #include <fstream>
-
+#include <06bodlia.h>
 using namespace std;
 
 //=============================================================================
@@ -19,8 +19,11 @@ using namespace std;
 int main(int, char **)
 {
     SetConsoleOutputCP(CP_UTF8);
-    
-    
+    cout << "gib deinen Benutzernamen ein: ";
+    string benutzername;
+    cin >> benutzername;
+    check(benutzername);
+   
 }
 
 //=============================================================================
