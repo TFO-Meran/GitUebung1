@@ -19,7 +19,15 @@ using namespace std;
 int main(int, char **)
 {
     SetConsoleOutputCP(CP_UTF8);
-    
+    bool pruefer = false;
+
+    do{
+        cout<< "Geben Sie Ihren Login ein:\n";
+        string login;
+        cin >> login;
+        pruefer= get_06eggarm(login);
+    }
+    while (pruefer==false);
     
 }
 
