@@ -28,7 +28,7 @@ int main(int, char **)
         cout << "Gib deinen Benutzer ein ";
         cin >> ben;
         test = get_06bersim(ben);
-        
+        //test
     } while (test==true);
 
 }
