@@ -9,6 +9,7 @@
 #include <iostream>
 #include <windows.h>
 #include <fstream>
+#include <06poeluk.h>
 
 using namespace std;
 
@@ -19,8 +20,19 @@ using namespace std;
 int main(int, char **)
 {
     SetConsoleOutputCP(CP_UTF8);
+
+    bool pruefer = false;
     
-    
+    do
+    {
+        cout << "Geben sie ihren Login ein: ";
+
+        string eingabe;
+        cin >> eingabe;
+
+        pruefer = get_06poeluk(eingabe);
+
+    } while (pruefer == false);
 }
 
 //=============================================================================
